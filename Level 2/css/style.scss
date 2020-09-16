@@ -1,0 +1,19 @@
+@import "./reset";
+
+$color-grey: #c3cfe2;
+
+.portfolio {
+  &__item {
+  }
+
+  &__image {
+  }
+
+  &__button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+    background-color: blue;
+    color: white;
+  }
+}
