@@ -133,6 +133,9 @@ table {
   border-spacing: 0;
 }
 
+.portfolio__image {
+  border: 1px solid blue;
+}
 .portfolio__button {
   text-decoration: none;
   display: inline-block;
