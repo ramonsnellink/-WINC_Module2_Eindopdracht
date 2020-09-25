@@ -133,14 +133,75 @@ table {
   border-spacing: 0;
 }
 
+body {
+  background-color: #c3cfe2;
+}
+
+.portfolio {
+  max-width: 900px;
+  width: 100%;
+  display: grid;
+  grid-gap: 30px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.portfolio__item {
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
 .portfolio__image {
-  border: 1px solid blue;
+  width: 100%;
+  height: auto;
+  display: block;
+  z-index: 2;
+}
+.portfolio__image:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
 .portfolio__button {
   text-decoration: none;
   display: inline-block;
-  padding: 20px;
-  background-color: blue;
-  color: white;
+  padding: 0.7em 1.2em;
+  background-color: white;
+  color: black;
+  border-radius: 3px;
+}
+.portfolio__button-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #3c4c66;
+  opacity: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  z-index: 1;
+}
+.portfolio__button-container:hover {
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .portfolio {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 /*# sourceMappingURL=style.css.map */
