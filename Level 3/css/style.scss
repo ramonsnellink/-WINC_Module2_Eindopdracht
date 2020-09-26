@@ -1,26 +1,64 @@
+@import "./reset";
 @import "./fa-ramon";
 
-.social-media.blog {
-  background-color: #e17b77;
-}
+// Icon size can be changed, and the transform on .social won't have to be changed.
+$icon-size: 50px;
+$social-width: 260px;
 
-.social-media.facebook {
-  background-color: #3b5998;
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-.social-media.twitter {
-  background-color: #00aced;
-}
-
-.social-media.github {
-  background-color: #333;
-}
-
-.social-media.linkedin {
-  background-color: #007bb6;
-}
-
 .fas,
 .fab {
-  //   color: white;
+  color: white;
+}
+
+.social-container {
+  position: fixed;
+  bottom: 10%;
+  right: 0;
+}
+
+.social {
+  height: $icon-size;
+  width: $social-width;
+  display: flex;
+  align-items: center;
+  transform: translate(#{$social-width - $icon-size}, 0);
+  transition: 0.3s ease-in-out;
+  font-size: 0.9rem;
+
+  &:hover {
+    transform: translate(0, 0);
+  }
+
+  &__link {
+    color: white;
+    margin-left: 10px;
+  }
+
+  &__icon {
+    width: $icon-size;
+    text-align: center;
+  }
+
+  &--blog {
+    background-color: #e17b77;
+  }
+
+  &--facebook {
+    background-color: #3b5998;
+  }
+
+  &--twitter {
+    background-color: #00aced;
+  }
+
+  &--github {
+    background-color: #333;
+  }
+
+  &--linkedin {
+    background-color: #007bb6;
+  }
 }

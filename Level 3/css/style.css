@@ -1,4 +1,139 @@
 @charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 /*!
  * Font Awesome Free 5.14.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -132,23 +267,61 @@
   font-weight: 900;
 }
 
-.social-media.blog {
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fas,
+.fab {
+  color: white;
+}
+
+.social-container {
+  position: fixed;
+  bottom: 10%;
+  right: 0;
+}
+
+.social {
+  height: 50px;
+  width: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translate(210px, 0);
+          transform: translate(210px, 0);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  font-size: 0.9rem;
+}
+.social:hover {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+.social__link {
+  color: white;
+  margin-left: 10px;
+}
+.social__icon {
+  width: 50px;
+  text-align: center;
+}
+.social--blog {
   background-color: #e17b77;
 }
-
-.social-media.facebook {
+.social--facebook {
   background-color: #3b5998;
 }
-
-.social-media.twitter {
+.social--twitter {
   background-color: #00aced;
 }
-
-.social-media.github {
+.social--github {
   background-color: #333;
 }
-
-.social-media.linkedin {
+.social--linkedin {
   background-color: #007bb6;
 }
 /*# sourceMappingURL=style.css.map */
